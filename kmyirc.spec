@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications
 Vendor:		Stephan Hermann <sh@sourcecode.de>
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	8b51f6f064963ce8aa3fec6a6e2ed2b1
 Patch0:		%{name}-opt.patch
 URL:		http://www.kmyirc.de/
 BuildRequires:	autoconf
