@@ -26,7 +26,7 @@ Klient IRC dla KDE.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
 kde_appsdir="%{_applnkdir}"; export kde_appsdir
