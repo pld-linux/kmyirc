@@ -1,5 +1,5 @@
 Summary:	IRC client for KDE
-Summary(pl.UTF-8):   Klient IRC dla KDE
+Summary(pl.UTF-8):	Klient IRC dla KDE
 Name:		kmyirc
 Version:	0.2.9
 Release:	0.1
