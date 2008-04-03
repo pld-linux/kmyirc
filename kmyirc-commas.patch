@@ -1,0 +1,33 @@
+--- kmyirc-0.2.9/kmyirc/logic/structures.h~	2003-02-24 20:50:46.000000000 +0100
++++ kmyirc-0.2.9/kmyirc/logic/structures.h	2008-04-03 14:20:31.236206237 +0200
+@@ -37,7 +37,7 @@
+ };
+ 
+ struct serverItem {
+-  QString group;;
++  QString group;
+   QString name;
+   QString serverName;
+   uint portNo;
+--- kmyirc-0.2.9/kmyirc/widgets/qextmdi/include/qextmdidefines.h~	2003-02-11 17:38:29.000000000 +0100
++++ kmyirc-0.2.9/kmyirc/widgets/qextmdi/include/qextmdidefines.h	2008-04-03 14:22:19.108029793 +0200
+@@ -93,7 +93,7 @@
+       TabPageMode    = 2
+    };
+ 
+-}; //namespace
++} //namespace
+ 
+ 
+ //----------------------------------------------------------------------------
+--- kmyirc-0.2.9/kmyirc/widgets/qextmdi/src/qextmdimainfrm.cpp~	2003-02-11 17:38:48.000000000 +0100
++++ kmyirc-0.2.9/kmyirc/widgets/qextmdi/src/qextmdimainfrm.cpp	2008-04-03 14:44:05.040460814 +0200
+@@ -1920,7 +1920,7 @@
+    if (m_pTaskBar)
+       m_pTaskBar->close();
+    m_pTaskBar = 0L;
+-};
++}
+ 
+ void QextMdiMainFrm::closeViewButtonPressed()
+ {
