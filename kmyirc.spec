@@ -2,21 +2,22 @@ Summary:	IRC client for KDE
 Summary(pl.UTF-8):	Klient IRC dla KDE
 Name:		kmyirc
 Version:	0.2.9
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Vendor:		Stephan Hermann <sh@sourcecode.de>
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	8b51f6f064963ce8aa3fec6a6e2ed2b1
 Patch0:		%{name}-opt.patch
+Patch1:		%{name}-commas.patch
+Patch2:		%{name}-include.patch
 URL:		http://www.kmyirc.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 3.0.3
 BuildRequires:	libjpeg-devel
+BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_htmldir	%{_docdir}/kde/HTML
 
 %description
 IRC client for KDE.
@@ -27,11 +28,11 @@ Klient IRC dla KDE.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
+%patch2 -p1
 
 %build
-kde_appsdir="%{_applnkdir}"; export kde_appsdir
-kde_htmldir="%{_htmldir}"; export kde_htmldir
-kde_icondir="%{_pixmapsdir}"; export kde_icondir
+kde_htmldir="%{_kdedocdir}"; export kde_htmldir
 # don't regenerate am (broken AKA kdevelop-generated)
 touch aclocal.m4 {,*/,*/*/,*/*/*/,*/*/*/*/}Makefile.in stamp-h.in
 %{__autoconf}
