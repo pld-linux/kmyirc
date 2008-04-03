@@ -1,0 +1,11 @@
+--- kmyirc-0.2.9/kmyirc/ircgui/mdirawircwin.ui~	2003-02-13 17:45:55.000000000 +0100
++++ kmyirc-0.2.9/kmyirc/ircgui/mdirawircwin.ui	2008-04-03 14:38:29.237740862 +0200
+@@ -159,8 +159,6 @@
+ </slots>
+ <layoutdefaults spacing="6" margin="11"/>
+ <includehints>
+-    <includehint>qextmdichildview.h</includehint>
+-    <includehint>kmitextbrowser.h</includehint>
+     <includehint>kpushbutton.h</includehint>
+     <includehint>klineedit.h</includehint>
+     <includehint>kpushbutton.h</includehint>
